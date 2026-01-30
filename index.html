@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManteCheck | Inteligencia Industrial y Gestión de Mantenimiento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0B0E11; color: #E6EDF3; scroll-behavior: smooth; }
+        .emerald-glow { box-shadow: 0 0 20px rgba(46, 204, 113, 0.15); }
+        .card-gradient { background: linear-gradient(145deg, #161B22 0%, #0B0E11 100%); }
+        .text-neon { color: #2ECC71; text-shadow: 0 0 10px rgba(46, 204, 113, 0.3); }
+        /* Para que las imágenes base64 o screenshots se vean premium */
+        .screenshot-frame { border: 8px solid #161B22; border-radius: 2rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); transition: all 0.3s ease; }
+        .screenshot-frame:hover { transform: translateY(-10px); border-color: #2ECC71; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-[#0B0E11]/80 backdrop-blur-md border-b border-gray-800">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-xl font-black italic uppercase tracking-tighter">
+                Mante<span class="text-[#2ECC71]">Check</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-bold tracking-widest text-gray-400 uppercase">
+                <a href="#beneficios" class="hover:text-[#2ECC71] transition-colors">Beneficios</a>
+                <a href="#app" class="hover:text-[#2ECC71] transition-colors">App</a>
+                <a href="#reporte" class="hover:text-[#2ECC71] transition-colors">Reportes</a>
+            </div>
+            <a href="https://wa.me/573002926420?text=Hola,%20solicito%20una%20demo%20de%20ManteCheck" target="_blank" 
+               class="bg-[#2ECC71] hover:scale-105 text-[#0B0E11] font-black py-2 px-5 rounded-lg transition-all text-xs uppercase tracking-widest">
+                Solicitar Demo
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="max-w-7xl mx-auto px-8 py-24 text-center">
+        <div class="inline-block px-4 py-1 border border-[#2ECC71]/30 rounded-full mb-6 bg-[#2ECC71]/5">
+            <span class="text-[#2ECC71] text-[10px] font-black tracking-[0.3em] uppercase italic">Eficiencia en Mantenimiento Industrial</span>
+        </div>
+        <h1 class="text-5xl md:text-8xl font-black mb-8 tracking-tighter leading-none italic uppercase">
+            Reduzca el <span class="text-neon">MTTR</span> y <br> optimice su planta
+        </h1>
+        <p class="max-w-3xl mx-auto text-gray-400 text-lg md:text-xl mb-12 font-light italic">
+            ManteCheck es la solución definitiva para el área de mantenimiento. Integramos IA avanzada para el diagnóstico, movilidad offline para el técnico y trazabilidad total para la gerencia.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-6">
+            <a href="https://wa.me/573002926420" class="bg-[#2ECC71] text-[#0B0E11] font-black py-5 px-12 rounded-2xl text-lg shadow-[0_10px_30px_rgba(46,204,113,0.2)] hover:-translate-y-1 transition-all">
+                AGENDAR PILOTO VÍA WHATSAPP
+            </a>
+            <a href="mailto:juliannal999@hotmail.com" class="border border-gray-700 text-white font-bold py-5 px-12 rounded-2xl text-lg hover:bg-white/5 transition-all">
+                CONTACTAR POR EMAIL
+            </a>
+        </div>
+    </header>
+
+    <!-- BENEFICIOS -->
+    <section id="beneficios" class="max-w-7xl mx-auto px-8 py-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="card-gradient p-10 rounded-[3rem] border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <div class="text-[#2ECC71] mb-6 italic font-black tracking-widest text-xs uppercase">01. Operatividad</div>
+                    <h3 class="text-3xl font-bold mb-4 italic uppercase">Optimización de tiempos de reparación</h3>
+                    <p class="text-gray-400 leading-relaxed">Reduzca el tiempo medio de reparación (MTTR) hasta en un 40%. Los técnicos reciben alertas instantáneas y toda la información del activo antes de llegar al punto de falla.</p>
+                </div>
+                <ul class="mt-8 space-y-2 text-sm text-[#2ECC71] font-bold italic">
+                    <li>✓ Diagnóstico asistido por IA</li>
+                    <li>✓ Eliminación de desplazamientos innecesarios</li>
+                </ul>
+            </div>
+            <div class="card-gradient p-10 rounded-[3rem] border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <div class="text-[#2ECC71] mb-6 italic font-black tracking-widest text-xs uppercase">02. Conocimiento</div>
+                    <h3 class="text-3xl font-bold mb-4 italic uppercase">IA Especializada en Manuales Tecnicos & Datos Estadísticos</h3>
+                    <p class="text-gray-400 leading-relaxed">Nuestra IA consume los manuales técnicos. El técnico puede preguntar por una solución y recibir instrucciones precisas en segundos. La geerencia tiene acceso a datos estadísticos de mantenimiento.</p>
+                </div>
+                <ul class="mt-8 space-y-2 text-sm text-[#2ECC71] font-bold italic">
+                    <li>✓ El conocimiento técnico siempre disponible</li>
+                    <li>✓ Datos estadísticos de mantenimiento en tiempo real</li>
+                </ul>
+            </div>
+            <div class="card-gradient p-10 rounded-[3rem] border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <div class="text-[#2ECC71] mb-6 italic font-black tracking-widest text-xs uppercase">03. Almacén de Repuestos</div>
+                    <h3 class="text-3xl font-bold mb-4 italic uppercase">Control Inteligente de Repuestos</h3>
+                    <p class="text-gray-400 leading-relaxed">Semáforos de disponibilidad en tiempo real. Almacén y técnicos sincronizados para que nunca falte una pieza crítica durante una intervención.</p>
+                </div>
+                <ul class="mt-8 space-y-2 text-sm text-[#2ECC71] font-bold italic">
+                    <li>✓ Auditoría visual de cada repuesto usado</li>
+                    <li>✓ Conexion directa con whatsapp</li>
+                </ul>
+            </div>
+            <div class="card-gradient p-10 rounded-[3rem] border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <div class="text-[#2ECC71] mb-6 italic font-black tracking-widest text-xs uppercase">04. Auditoría</div>
+                    <h3 class="text-3xl font-bold mb-4 italic uppercase">Trazabilidad Total y Seguridad</h3>
+                    <p class="text-xl italic font-bold">100% Digital. Cero Papel.</p>
+                    <p class="text-gray-400 leading-relaxed mt-4">Cada acción queda registrada: Quién reportó, quién asignó, qué se reparó y qué suministros se usaron. Auditorías listas en un click.</p>
+                </div>
+                <ul class="mt-8 space-y-2 text-sm text-[#2ECC71] font-bold italic">
+                    <li>✓ Registros fotográficos de cada etapa</li>
+                    <li>✓ Reporte final en PDF</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- APARTADO DE LA APP (GALERÍA EXPANDIDA A 6 SLOTS) -->
+    <section id="app" class="bg-[#161B22]/30 py-24 border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="mb-16 text-center md:text-left">
+                <h2 class="text-4xl font-black italic uppercase tracking-tighter leading-none mb-4">Experiencia <span class="text-[#2ECC71]">Mobile Premium</span></h2>
+                <p class="text-gray-400 max-w-xl italic mx-auto md:mx-0 text-sm md:text-base">Interfaz diseñada para condiciones de planta. Oscura para evitar fatiga visual y robusta para cualquier dispositivo.</p>
+            </div>
+            
+            <!-- Grid de 6 Slots (3 por fila en desktop, 2 por fila en tablet) -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16">
+                
+                <!-- PANTALLAZO 1: LOGIN -->
+                <div class="text-center space-y-4">
+                    <img src="login.png" class="screenshot-frame mx-auto" alt="Login">
+                    <p class="text-[10px] font-black text-gray-500 uppercase tracking-widest italic leading-none">01. Acceso Seguro</p>
+                </div>
+
+                <!-- PANTALLAZO 2: DASHBOARD (Con efecto de elevación) -->
+                <div class="text-center space-y-4 md:-translate-y-12">
+                    <img src="dashboard.png" class="screenshot-frame mx-auto border-[#2ECC71]/30" alt="Dashboard">
+                    <p class="text-[10px] font-black text-[#2ECC71] uppercase tracking-widest italic leading-none">02. Dashboard Principal</p>
+                </div>
+
+                <!-- PANTALLAZO 3: IA AGENTE -->
+                <div class="text-center space-y-4">
+                    <img src="agente.png" class="screenshot-frame mx-auto" alt="IA Chat">
+                    <p class="text-[10px] font-black text-gray-500 uppercase tracking-widest italic leading-none">03. Consulta Datos Analiticos</p>
+                </div>
+
+                <!-- PANTALLAZO 4: ALMACÉN -->
+                <div class="text-center space-y-4">
+                    <img src="reporte.png" class="screenshot-frame mx-auto" alt="Logística">
+                    <p class="text-[10px] font-black text-gray-500 uppercase tracking-widest italic leading-none">04. Reporte de Incidencias</p>
+                </div>
+
+                <!-- PANTALLAZO 5: REGISTRO TÉCNICO (Con efecto de elevación) -->
+                <div class="text-center space-y-4 md:-translate-y-12">
+                    <img src="repuestos.png" class="screenshot-frame mx-auto border-[#2ECC71]/30" alt="Registro">
+                    <p class="text-[10px] font-black text-[#2ECC71] uppercase tracking-widest italic leading-none">05. Solicitud de Repuestos</p>
+                </div>
+
+                <!-- PANTALLAZO 6: ANALÍTICA O PERFIL -->
+                <div class="text-center space-y-4">
+                    <img src="cierre.png" class="screenshot-frame mx-auto" alt="Analítica">
+                    <p class="text-[10px] font-black text-gray-500 uppercase tracking-widest italic leading-none">06. Cierre de Incidencias</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- APARTADO DEL REPORTE FINAL -->
+    <section id="reporte" class="max-w-7xl mx-auto px-8 py-24 border-b border-gray-800">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-[#2ECC71]/20 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <!-- PANTALLAZO DEL PDF -->
+                    <img src="PDF.png" class="relative rounded-[2rem] border border-gray-800 shadow-2xl" alt="Reporte Técnico PDF">
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 space-y-8">
+                <h2 class="text-5xl font-black italic uppercase tracking-tighter leading-tight">Documentación de <br><span class="text-[#2ECC71]">Clase Mundial</span></h2>
+                <p class="text-gray-400 text-lg italic leading-relaxed">Al finalizar cada intervención, ManteCheck genera un reporte automático estilo <strong>Power BI</strong> de 3 páginas. Incluye trazabilidad técnica, cronología detallada, galería de repuestos y validación de datos.</p>
+                <div class="space-y-4">
+                    <div class="flex gap-4 items-center p-4 rounded-2xl bg-white/5 border border-gray-800">
+                        <div class="bg-[#2ECC71] text-[#0B0E11] p-2 rounded-lg"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                        <p class="font-bold italic uppercase text-xs tracking-widest">Envíos automáticos a correos directivos</p>
+                    </div>
+                    <div class="flex gap-4 items-center p-4 rounded-2xl bg-white/5 border border-gray-800">
+                        <div class="bg-[#2ECC71] text-[#0B0E11] p-2 rounded-lg"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg></div>
+                        <p class="font-bold italic uppercase text-xs tracking-widest">Trazabilidad de datos en tiempo real</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="max-w-7xl mx-auto px-8 py-24 mb-24">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-black italic tracking-widest uppercase italic">Lo que dicen <span class="text-[#2ECC71]">los expertos</span></h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-[#161B22] p-8 rounded-3xl border border-[#2ECC71]/30 italic">
+                <p class="text-gray-400 mb-6 font-light">"La IA para manuales cambió las reglas del juego. Mis técnicos ya no pierden tiempo buscando en libros o PDFs; ManteCheck les da la respuesta inmediata. Ademas me ayuda a tener repuestos criticos en stock"</p>
+                <div class="flex items-center gap-4 border-t border-white/5 pt-4">
+                    <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center font-black text-[#2ECC71]">G</div>
+                    <div><p class="text-xs font-black uppercase tracking-widest">Gerente de Planta</p><p class="text-[10px] text-gray-500 font-bold uppercase italic">Sector Alimentos</p></div>
+                </div>
+            </div>
+            <div class="bg-[#161B22] p-8 rounded-3xl border border-[#2ECC71]/30 italic shadow-lg shadow-[#2ECC71]/5">
+                <p class="text-gray-400 mb-6 font-light">"El agente IA de ManteCheck me informa datos historicos y analiticos de quien reportó, quien reparó y cuanto tiempo se demoró. Esto me ayuda a tomar decisiones informadas."</p>
+                <div class="flex items-center gap-4 border-t border-white/5 pt-4">
+                    <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center font-black text-[#2ECC71]">D</div>
+                    <div><p class="text-xs font-black uppercase tracking-widest">Director de Operaciones</p><p class="text-[10px] text-gray-500 font-bold uppercase italic">Industria Textil</p></div>
+                </div>
+            </div>
+            <div class="bg-[#161B22] p-8 rounded-3xl border border-[#2ECC71]/30 italic">
+                <p class="text-gray-400 mb-6 font-light">"Tengo reportes completos con datos reales y registros fotograficos. ManteCheck me ayuda a tener trazabilidad de mi equipo de mantenimiento"</p>
+                <div class="flex items-center gap-4 border-t border-white/5 pt-4">
+                    <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center font-black text-[#2ECC71]">S</div>
+                    <div><p class="text-xs font-black uppercase tracking-widest leading-tight">Supervisor Mantenimiento</p><p class="text-[10px] text-gray-500 font-bold uppercase italic">Sector Minero</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO FINAL Y FOOTER -->
+    <footer class="bg-[#0B0E11] border-t border-gray-900 pt-24 pb-12 px-8 text-center">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <div class="space-y-4">
+                <h2 class="text-4xl md:text-6xl font-black italic uppercase tracking-tighter italic leading-none">¿Listo para <span class="text-[#2ECC71]">transformar</span> <br> su gestión?</h2>
+                <p class="text-gray-500 uppercase tracking-[0.4em] font-black text-[10px] md:text-xs italic">Solicite hoy un piloto gratuito en su planta industrial</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://wa.me/573002926420?text=Hola,%20me%20interesa%20una%20demo" class="flex items-center gap-3 bg-[#2ECC71] text-[#0B0E11] font-black py-4 px-8 rounded-2xl hover:scale-105 transition-all">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.001.332.005c.109.004.258-.041.405.314.159.386.541 1.32.589 1.42.048.1.08.217.014.346-.067.13-.1.216-.2.331-.1.115-.21.258-.3.346-.1.1-.217.21-.093.421.124.212.552.909 1.186 1.474.818.729 1.503.954 1.719 1.062.217.109.346.094.476-.051.13-.145.556-.65.708-.874.152-.224.303-.187.512-.109.208.079 1.32.624 1.549.739s.382.173.44.269c.059.096.059.556-.085.961z"/></svg>
+                    WHATSAPP DIRECTO (+57)
+                </a>
+                <a href="mailto:juliannal999@hotmail.com" class="flex items-center gap-3 bg-white/5 border border-gray-800 text-white font-black py-4 px-8 rounded-2xl italic tracking-widest uppercase text-xs md:text-sm hover:bg-white/10 transition-all">
+                    juliannal999@hotmail.com
+                </a>
+            </div>
+
+            <div class="pt-24 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-left italic">
+                    <div class="text-lg font-black uppercase italic tracking-tighter">Mante<span class="text-[#2ECC71]">Check</span></div>
+                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest mt-2">© 2026 Inteligencia Industrial MTTR</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-[9px] text-gray-500 font-bold uppercase tracking-widest mb-2 italic">Ingeniería y Desarrollo por</p>
+                    <p class="text-sm font-black italic text-gray-300 uppercase tracking-tighter">Julian Alzate Monsalve | Software Developer</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
